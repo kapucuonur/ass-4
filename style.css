@@ -1,0 +1,154 @@
+@import './themes.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 5rem auto ;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    
+    padding: 20px;
+    
+
+
+
+}
+.img{
+    /* border: 2px solid rgb(27, 60, 142); */
+   
+    box-shadow: 5px 2px 10px rgb(5, 151, 219);
+   
+    border-radius: 60px;
+
+}
+img{
+    width: 520px;
+    height: 100%;
+    /* border: 2px solid khaki; */
+    border-radius: 50px;
+}
+
+.grup{
+    margin: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.baslık h1{
+font-size: 35px;
+font-weight: 700;
+font-family: var( --ff-prosto);
+}
+.baslık span{
+font-size: 25px;
+color: aliceblue;
+background-color: var(--blue-3);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+padding: 3px 10px 3px 10px;
+}
+
+
+.nav-bar h3{
+    /* border: 2px solid red; */
+    margin: 5px;
+font-size: 20px;
+font-weight: 600px;
+
+margin-top: -5px;
+font-family: var(--ff-pt);
+
+}
+.nav-bar button{
+    display:inline-block; 
+    /* border: 2px solid red; */
+    text-decoration: none;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   font-family: var(--ff-pt);
+   font-size: 15px;
+   color: black;
+   border-radius: 9px;
+   background-color: rgba(215, 217, 219, 0.614);
+    
+
+}
+
+.nav-bar span a{
+    background-color: var(--blue-3);
+    color: aliceblue;
+}
+
+.basket{
+    display: flex;
+    justify-content:space-between;
+    text-decoration: none;
+}
+
+basket{
+    /* border: 2px solid red; */
+    padding: px;
+  width: 185px;
+  height: 48px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+  
+    color: aliceblue;
+}
+.basket button{
+    color: red;
+    background-color: orange;
+}
+ .par2 {
+display: flex;
+align-items: baseline;
+
+ }
+.par2 .original-amount{
+    font-size:2rem;
+    display: flex;
+    margin-right: 1px;
+    
+    
+}    
+
+button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(6, 184, 175, 0.555);
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    gap: 1rem;
+    border-radius: 15px;
+    flex-direction: row;
+  }
+  button:hover{
+    background-color: rgb(7, 7, 248);
+    transition: 0.5s;
+  }
+
+
+@media screen and (max-width:700px){
+img{
+    width: 300px;
+}
+}
+
+@media screen and (max-width:500px){
+    .contaner{
+         flex-direction: column; 
+    }
+    .basket{
+        flex-direction: column;
+    }
+}
